@@ -22,12 +22,15 @@ related = '''
 ${RELATED}
 '''
 
+print('=' * 40)
 for line in related.split('\n'):
     line = line.strip()
     if line:
         print('sudo apt-mark hold', line.split('/')[0])
+
+print('sudo apt-mark showhold')
+print('=' * 40)
 "
-echo "sudo apt-mark showhold"
 
 # TODO: run apt-mark commands automatically
 echo "Pls run the commands above"
