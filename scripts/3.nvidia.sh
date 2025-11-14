@@ -1,7 +1,7 @@
 #!/bin/bash
-SCRIPTS_DIR=$(dirname $(realpath $0))
-source ${SCRIPTS_DIR}/0.env.sh
 set -e
+SCRIPTS_DIR=${PWD}
+source ${SCRIPTS_DIR}/0.env.sh
 
 # Install driver
 sudo apt install -y         \
